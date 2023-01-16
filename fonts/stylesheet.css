@@ -6,7 +6,7 @@
     font-family: 'josefin_slabthin';
     src: url('../fonts/josefinslab-variablefont_wght-webfont.woff2') format('woff2'),
         url('../fonts/josefinslab-variablefont_wght-webfont.woff') format('woff');
-    font-weight: bolder;
+    font-weight: normal;
     font-style: normal;
     color: black;
 }

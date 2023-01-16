@@ -6,13 +6,47 @@
     font-family: none;
 }
 
-
+:root {
+    --peacock-width: 400px;
+}
 
 p {
     font-family: 'josefin_slabthin';
 }
 
 #peacock-picture {
-    width: 400px;
+    width: var(--peacock-width);
     object-fit: contain;
+}
+
+body {
+    position: relative;
+}
+
+.title {
+    display: flex;
+    font-family: 'josefin_slabthin';
+    height: calc(var(--peacock-width) * 0.15);
+    width: var(--peacock-width);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: calc(var(--peacock-width) * 0.5 + calc(var(--peacock-width) * 0.1));
+}
+
+.title p {
+    color: red;
+    font-size: 40px;
+    padding: 6px 10px 0;
+}
+
+.title i {
+    background: rgb(12,255,0);
+    background: linear-gradient(90deg, rgba(12,255,0,1) 0%, rgba(0,239,255,1) 90%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
 }
