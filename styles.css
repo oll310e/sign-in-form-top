@@ -7,11 +7,9 @@
 }
 
 :root {
-    --peacock-width: 400px;
-}
-
-p {
-    font-family: 'josefin_slabthin';
+    --peacock-width: 40vw;
+    --form-textColor: rgb(93, 92, 92);
+    --peacock-color: rgb(149, 9, 9);
 }
 
 #peacock-picture {
@@ -21,6 +19,7 @@ p {
 
 body {
     position: relative;
+    display: flex;
 }
 
 .title {
@@ -36,8 +35,9 @@ body {
 }
 
 .title p {
+    font-family: 'josefin_slabthin';
     color: red;
-    font-size: 40px;
+    font-size: 4vw;
     padding: 6px 10px 0;
 }
 
@@ -48,5 +48,73 @@ body {
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 45px;
+    font-size: 4vw;
+}
+
+.formbar{
+    color: var(--form-textColor);
+
+    background: rgb(229, 230, 255);
+    padding: 20px;
+}
+
+.formbar-form {
+    background-color: white;
+}
+
+form {
+    border: 2px solid var(--peacock-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 12px;
+    box-shadow: 10px 5px 8px rgb(64, 82, 84) ;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-question {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+input {
+    border: 1px solid var(--form-textColor);
+    outline: none;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+input:focus-visible,
+input:invalid:hover {
+    border:rgb(149, 9, 9) 1px solid;
+}
+
+input:valid {
+    border:rgb(37, 149, 9) 1px solid;
+}
+
+
+*:required::after {
+    content: "*";
+}
+
+button {
+    padding: 10px;
+    background:linear-gradient(90deg, rgba(12,255,0,1) 0%, rgba(0,239,255,1) 90%, rgba(0,212,255,1) 100%);
+    border-radius: 17px 8px 17px 8px;
+    border: 1px solid var(--form-textColor);
+    box-shadow: 3px 3px 4px rgb(64, 82, 84) ;
+}
+
+button:hover {
+    border:rgb(37, 149, 9) 1px solid;
 }
