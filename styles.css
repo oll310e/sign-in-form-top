@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: none;
+    font-family: none;
+}
+
+
+
+p {
+    font-family: 'josefin_slabthin';
+}
+
+#peacock-picture {
+    width: 400px;
+    object-fit: contain;
+}
